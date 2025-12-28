@@ -37,7 +37,6 @@
   average=(math + science + english​)/3.0f
   
 # Program:
-
    #include <stdio.h>
    int main() {
    float math,sci,eng;
