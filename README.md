@@ -35,6 +35,7 @@
   Calculate the average marks using the formula:
    
   average=(math + science + english​)/3.0f
+  
 # Program:
 
    #include <stdio.h>
@@ -331,17 +332,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:
   Stop
 # Program:
-#include <stdio.h>
-int main() {
+
+    #include <stdio.h>
+    
+    int main() {
+    
     int n;
+    
     scanf("%d",&n);
+    
     printf("0\n");
+    
     for(int i=n;i>=1;i--){
+    
         for(int j=i;j<=7;j++) {
+        
             printf("%d ", j);
         }
+        
         printf("0 ");
+        
         for(int j=7;j>=i;j--) {
+        
             printf("%d ", j);
         }
         printf("\n");
