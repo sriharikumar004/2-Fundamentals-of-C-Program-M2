@@ -97,11 +97,27 @@ Thus, the program was implemented and executed successfully, and the required ou
   a. Multiply number by i.
   
   b. Print the result in the format: number x i = result.
-### Step 6: 
-  Stop
 
 # Program:
+
+    #include<stdio.h>
+    
+    int main(){
+
+    int num,n=10;
+
+    printf("Enter a number\n");
+    
+    scanf("%d",&num);
+    
+    for(int i=1;i<=n;i++){
+    
+        printf("%d * %d = %d\n",i,num,i*num);
+    }
+}
 # Output:
+<img width="230" height="377" alt="image" src="https://github.com/user-attachments/assets/1bc74ec2-dfec-4d99-a2d4-4ad59cdda6b7" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -144,7 +160,41 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7:   
   Stop
 # Program:
+    
+    #include <stdio.h>
+    
+    int main() {
+    
+    int n, i = 2, f = 0;
+    
+    printf("Enter a number: ");
+    
+    scanf("%d", &n);
+    
+    while (i <= n - 1) {
+    
+        if (n % i == 0) {
+    
+          f = 1;
+          
+            break;
+        }
+        i++;
+    }
+    if (f == 0)
+   
+        printf("%d is a prime number.\n", n);
+    
+    else
+    
+        printf("%d is not a prime number.\n", n);
+    
+    return 0;
+}
+
 # Output:
+<img width="353" height="125" alt="image" src="https://github.com/user-attachments/assets/1aabea4b-c187-410a-8464-c85dbba0007a" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -192,7 +242,42 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+    
+    #include <stdio.h>
+    
+    int main() {
+    
+    int n;
+    
+    printf("Enter a number:\n");
+    
+    scanf("%d", &n);
+    
+    for(int i = 1; i <= n; i++) {
+    
+        for(int j = 1; j <= n; j++) {
+        
+            if(i == 1) printf("%d", j);
+            
+            else if(i == n) printf("%d", n + 1 - j);
+            
+            else if(j == 1) printf("%d", i);
+            
+            else if(j == n) printf("%d", n + 1 -i );
+            
+            else printf(" ");
+        }
+        
+        printf("\n");
+    }
+    
+    return 0;
+}
+
 # Output:
+
+<img width="168" height="243" alt="image" src="https://github.com/user-attachments/assets/ab0d4dbd-60e6-4908-a3cc-77012621f198" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -245,6 +330,27 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+# Program:
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    printf("0\n");
+    for(int i=n;i>=1;i--){
+        for(int j=i;j<=7;j++) {
+            printf("%d ", j);
+        }
+        printf("0 ");
+        for(int j=7;j>=i;j--) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+# Output:  
+<img width="380" height="289" alt="image" src="https://github.com/user-attachments/assets/ca26f9b8-5edf-4e2d-a0c1-60fc392be7c5" />
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
