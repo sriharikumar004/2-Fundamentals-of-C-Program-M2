@@ -39,33 +39,19 @@
 # Program:
 
    #include <stdio.h>
-  
    int main() {
-   
    float math,sci,eng;
-   
    printf("Enter ur three subjects mark\n");
-   
    scanf("%f %f %f",&math,&sci,&eng);
-   
    float avg=(math+sci+eng)/3.0;
-   
    if(avg>=90)
-   
    printf("Grade A");
-   
    else if(avg<90 && avg>=75)
-   
    printf("Grade B");
-   
    else if(avg<75 && avg>=50)
-   
    printf("Grade C");
-   
    else
-   
    printf("Grade F");
- 
     return 0;
 }
 # Output:
