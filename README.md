@@ -35,28 +35,41 @@
   Calculate the average marks using the formula:
    
   average=(math + science + english​)/3.0f
-### Step 8: 
-  Check if average is greater than or equal to 90.0f
-
-  If yes, print Grade A.
-
-  Else, proceed to Step 9.  
-### Step 9:
-  Check if average is greater than or equal to 75.0f
-
-  If yes, print Grade B.
-
-  Else, proceed to Step 10.
-### Step 10:
-  Check if average is greater than or equal to 50.0f
-
-  If yes, print Grade C.
-
-  Else, print Grade F.
-### Step 11:
-  Stop
 # Program:
+
+   #include <stdio.h>
+  
+   int main() {
+   
+   float math,sci,eng;
+   
+   printf("Enter ur three subjects mark\n");
+   
+   scanf("%f %f %f",&math,&sci,&eng);
+   
+   float avg=(math+sci+eng)/3.0;
+   
+   if(avg>=90)
+   
+   printf("Grade A");
+   
+   else if(avg<90 && avg>=75)
+   
+   printf("Grade B");
+   
+   else if(avg<75 && avg>=50)
+   
+   printf("Grade C");
+   
+   else
+   
+   printf("Grade F");
+ 
+    return 0;
+}
 # Output:
+<img width="364" height="173" alt="image" src="https://github.com/user-attachments/assets/9ac925e0-d59a-42ab-9b96-a8ef1b27f21b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
